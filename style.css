@@ -1,1 +1,52 @@
-/* CSS styling for UI, map, arena, etc. */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#village-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url('assets/ui/village.png') no-repeat center center;
+  background-size: cover;
+}
+
+.building-btn {
+  position: absolute;
+  background: rgba(0,0,0,0);
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  z-index: 10;
+}
+
+/* Place buttons roughly — tweak these based on your image */
+.main-building {
+  top: 65%;
+  left: 10%;
+}
+
+.treehouse {
+  top: 35%;
+  left: 50%;
+}
+
+.market {
+  top: 75%;
+  left: 45%;
+}
+
+.arena {
+  top: 40%;
+  left: 30%;
+}
+
+.gate {
+  top: 10%;
+  left: 85%;
+  width: 100px;
+  height: 100px;
+}
