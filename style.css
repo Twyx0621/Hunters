@@ -9,33 +9,34 @@ body, html {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background: url('assets/Village.png') no-repeat center center;
+  background: url('assets/ui/Village.png') no-repeat center center;
   background-size: cover;
 }
 
+/* Invisible large clickable building areas */
 .building-btn {
   position: absolute;
   background: rgba(0,0,0,0);
   border: none;
   cursor: pointer;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   z-index: 10;
 }
 
-/* Place buttons roughly — tweak these based on your image */
+/* Example positions (adjust to your village image) */
 .main-building {
-  top: 65%;
-  left: 10%;
+  top: 60%;
+  left: 15%;
 }
 
 .treehouse {
   top: 35%;
-  left: 50%;
+  left: 48%;
 }
 
 .market {
-  top: 75%;
+  top: 72%;
   left: 45%;
 }
 
@@ -47,6 +48,41 @@ body, html {
 .gate {
   top: 10%;
   left: 85%;
-  width: 100px;
-  height: 100px;
+}
+
+/* Text labels for building names */
+.building-label {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 1px 1px 3px black;
+  cursor: pointer;
+  z-index: 20;
+}
+
+/* Label positions */
+.main-label {
+  top: 55%;
+  left: 16%;
+}
+
+.treehouse-label {
+  top: 30%;
+  left: 50%;
+}
+
+.market-label {
+  top: 68%;
+  left: 46%;
+}
+
+.arena-label {
+  top: 35%;
+  left: 32%;
+}
+
+.gate-label {
+  top: 8%;
+  left: 86%;
 }
