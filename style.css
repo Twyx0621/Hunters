@@ -24,31 +24,11 @@ body, html {
   z-index: 10;
 }
 
-/* Example positions (adjust to your village image) */
-.main-building {
-  top: 60%;
-  left: 15%;
-}
-
-.treehouse {
-  top: 35%;
-  left: 48%;
-}
-
-.market {
-  top: 72%;
-  left: 45%;
-}
-
-.arena {
-  top: 40%;
-  left: 30%;
-}
-
-.gate {
-  top: 10%;
-  left: 85%;
-}
+.main-building { top: 60%; left: 15%; }
+.treehouse { top: 35%; left: 48%; }
+.market { top: 72%; left: 45%; }
+.arena { top: 40%; left: 30%; }
+.gate { top: 10%; left: 85%; }
 
 /* Text labels for building names */
 .building-label {
@@ -61,28 +41,8 @@ body, html {
   z-index: 20;
 }
 
-/* Label positions */
-.main-label {
-  top: 55%;
-  left: 16%;
-}
-
-.treehouse-label {
-  top: 30%;
-  left: 50%;
-}
-
-.market-label {
-  top: 68%;
-  left: 46%;
-}
-
-.arena-label {
-  top: 35%;
-  left: 32%;
-}
-
-.gate-label {
-  top: 8%;
-  left: 86%;
-}
+.main-label { top: 55%; left: 16%; }
+.treehouse-label { top: 30%; left: 50%; }
+.market-label { top: 68%; left: 46%; }
+.arena-label { top: 35%; left: 32%; }
+.gate-label { top: 8%; left: 86%; }
