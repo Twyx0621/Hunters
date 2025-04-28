@@ -24,11 +24,12 @@ body, html {
   z-index: 10;
 }
 
-.main-building { top: 60%; left: 15%; }
-.treehouse { top: 35%; left: 48%; }
+/* Button hit zones (adjust if needed) */
+.main-building { top: 57%; left: 18%; }
+.treehouse { top: 32%; left: 50%; }
 .market { top: 72%; left: 45%; }
 .arena { top: 40%; left: 30%; }
-.gate { top: 10%; left: 85%; }
+.gate { top: 12%; left: 87%; }
 
 /* Text labels for building names */
 .building-label {
@@ -41,8 +42,9 @@ body, html {
   z-index: 20;
 }
 
-.main-label { top: 55%; left: 16%; }
-.treehouse-label { top: 30%; left: 50%; }
+/* Label exact positions */
+.main-label { top: 53%; left: 19%; }
+.treehouse-label { top: 29%; left: 51%; }
 .market-label { top: 68%; left: 46%; }
-.arena-label { top: 35%; left: 32%; }
-.gate-label { top: 8%; left: 86%; }
+.arena-label { top: 36%; left: 31%; }
+.gate-label { top: 8%; left: 88%; }
