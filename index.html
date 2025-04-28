@@ -9,11 +9,19 @@
 <body>
 
   <div id="village-container">
-    <button class="building-btn main-building" onclick="enterBuilding('main')">Main</button>
-    <button class="building-btn treehouse" onclick="enterBuilding('treehouse')">Treehouse</button>
-    <button class="building-btn market" onclick="enterBuilding('market')">Market</button>
-    <button class="building-btn arena" onclick="enterBuilding('arena')">Arena</button>
-    <button class="building-btn gate" onclick="enterBuilding('map')">World Map</button>
+    <!-- Building buttons (invisible, large clickable areas) -->
+    <button class="building-btn main-building" onclick="enterBuilding('main')"></button>
+    <button class="building-btn treehouse" onclick="enterBuilding('treehouse')"></button>
+    <button class="building-btn market" onclick="enterBuilding('market')"></button>
+    <button class="building-btn arena" onclick="enterBuilding('arena')"></button>
+    <button class="building-btn gate" onclick="enterBuilding('map')"></button>
+
+    <!-- Building labels (clickable names) -->
+    <div class="building-label main-label" onclick="enterBuilding('main')">Main Building</div>
+    <div class="building-label treehouse-label" onclick="enterBuilding('treehouse')">Treehouse</div>
+    <div class="building-label market-label" onclick="enterBuilding('market')">Market</div>
+    <div class="building-label arena-label" onclick="enterBuilding('arena')">Arena</div>
+    <div class="building-label gate-label" onclick="enterBuilding('map')">World Map</div>
   </div>
 
   <div id="building-screen"></div>
