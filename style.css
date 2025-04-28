@@ -3,14 +3,16 @@ body, html {
   padding: 0;
   height: 100%;
   font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
 }
 
 #village-container {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 1920px; /* Full HD width */
+  height: 1080px; /* Full HD height */
   background: url('assets/Village.png') no-repeat center center;
   background-size: cover;
+  margin: 0 auto;
 }
 
 /* Invisible large clickable building areas */
@@ -19,32 +21,32 @@ body, html {
   background: rgba(0,0,0,0);
   border: none;
   cursor: pointer;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   z-index: 10;
 }
 
-/* Button hit zones (adjust if needed) */
-.main-building { top: 57%; left: 18%; }
-.treehouse { top: 32%; left: 50%; }
-.market { top: 72%; left: 45%; }
-.arena { top: 40%; left: 30%; }
-.gate { top: 12%; left: 87%; }
+/* Buttons roughly centered over buildings */
+.main-building { top: 620px; left: 300px; }
+.treehouse { top: 270px; left: 980px; }
+.market { top: 760px; left: 860px; }
+.arena { top: 380px; left: 540px; }
+.gate { top: 120px; left: 1580px; }
 
-/* Text labels for building names */
+/* Building name labels */
 .building-label {
   position: absolute;
   color: white;
   font-weight: bold;
-  font-size: 20px;
-  text-shadow: 1px 1px 3px black;
+  font-size: 24px;
+  text-shadow: 2px 2px 5px black;
   cursor: pointer;
   z-index: 20;
 }
 
-/* Label exact positions */
-.main-label { top: 53%; left: 19%; }
-.treehouse-label { top: 29%; left: 51%; }
-.market-label { top: 68%; left: 46%; }
-.arena-label { top: 36%; left: 31%; }
-.gate-label { top: 8%; left: 88%; }
+/* Text labels exactly placed */
+.main-label { top: 580px; left: 310px; }
+.treehouse-label { top: 250px; left: 990px; }
+.market-label { top: 720px; left: 870px; }
+.arena-label { top: 350px; left: 550px; }
+.gate-label { top: 80px; left: 1590px; }
