@@ -10,7 +10,7 @@ body, html {
   position: relative;
   width: 1920px; /* Full HD width */
   height: 1080px; /* Full HD height */
-  background: url('assets/Village.png') no-repeat center center;
+  background: url('assets/Town.png') no-repeat center center;
   background-size: cover;
   margin: 0 auto;
 }
