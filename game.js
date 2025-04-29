@@ -1,72 +1,38 @@
 function enterBuilding(building) {
   const screen = document.getElementById("building-screen");
-  screen.style.position = "absolute";
-  screen.style.top = "10%";
-  screen.style.left = "50%";
-  screen.style.transform = "translateX(-50%)";
-  screen.style.background = "rgba(255,255,255,0.95)";
-  screen.style.border = "2px solid #333";
-  screen.style.padding = "20px";
-  screen.style.borderRadius = "12px";
-  screen.style.zIndex = "100";
-  screen.style.minWidth = "300px";
-  screen.style.textAlign = "center";
-
-  let content = "";
-
-  switch (building) {
+  
+  switch(building) {
     case 'main':
-      content = `
-        <h2>Main Building</h2>
-        <p>This is where your hero lives. Access stats, inventory, and gear here.</p>
-        <button onclick="closeBuilding()">❌ Close</button>
-      `;
+      screen.innerHTML = `<h2>Main Building</h2><p>Welcome to your hero house.</p>`;
       break;
     case 'treehouse':
-      content = `
-        <h2>Treehouse</h2>
-        <p>Coming soon: Storage, quests, and pet system!</p>
-        <button onclick="closeBuilding()">❌ Close</button>
-      `;
+      screen.innerHTML = `<h2>Treehouse</h2><p>This is the treehouse. Train your skills here.</p>`;
       break;
     case 'market':
-      content = `
-        <h2>Market</h2>
-        <p>You’ll be able to buy potions, weapons, armor and trade with others here.</p>
-        <button onclick="closeBuilding()">❌ Close</button>
-      `;
+      screen.innerHTML = `<h2>Market</h2><p>Buy and sell items here.</p>`;
+      break;
+    case 'blacksmith':
+      screen.innerHTML = `<h2>Blacksmith</h2><p>Upgrade and craft equipment here.</p>`;
       break;
     case 'arena':
-      content = `
-        <h2>Arena</h2>
-        <p>Fight against other players and climb the rankings!</p>
-        <button onclick="closeBuilding()">❌ Close</button>
-      `;
+      screen.innerHTML = `<h2>Arena</h2><p>Fight duels against other players here.</p>`;
       break;
     case 'map':
-      content = `
-        <h2>World Map</h2>
-        <p>Prepare for battle and explore the lands!</p>
-        <button onclick="goToMap()">🌍 Enter Map</button>
-        <br><br>
-        <button onclick="closeBuilding()">❌ Cancel</button>
-      `;
+      renderWorldMap();
       break;
     default:
-      content = `<h2>${building}</h2><p>This area is under construction.</p><button onclick="closeBuilding()">❌ Close</button>`;
+      screen.innerHTML = `<h2>Building</h2><p>Feature under construction.</p>`;
       break;
   }
-
-  screen.innerHTML = content;
 }
 
-function closeBuilding() {
+function renderWorldMap() {
+  const screen = document.getElementById("building-screen");
+  screen.innerHTML = `<h2>World Map</h2><p>Select a zone to explore.</p>
+  <button onclick="returnToVillage()">⬅️ Back to Village</button>`;
+}
+
+function returnToVillage() {
   const screen = document.getElementById("building-screen");
   screen.innerHTML = "";
-  screen.removeAttribute("style");
-}
-
-function goToMap() {
-  alert("Loading World Map... (next feature)");
-  closeBuilding();
 }
