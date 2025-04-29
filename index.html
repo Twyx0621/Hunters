@@ -3,25 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hunters - Forest Village</title>
+  <title>Hunters - Forest Town</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <div id="village-container">
-    <!-- Building buttons (invisible, large clickable areas) -->
+    <!-- Invisible clickable areas -->
     <button class="building-btn main-building" onclick="enterBuilding('main')"></button>
     <button class="building-btn treehouse" onclick="enterBuilding('treehouse')"></button>
     <button class="building-btn market" onclick="enterBuilding('market')"></button>
+    <button class="building-btn blacksmith" onclick="enterBuilding('blacksmith')"></button>
     <button class="building-btn arena" onclick="enterBuilding('arena')"></button>
     <button class="building-btn gate" onclick="enterBuilding('map')"></button>
-
-    <!-- Building labels (clickable names) -->
-    <div class="building-label main-label" onclick="enterBuilding('main')">Main Building</div>
-    <div class="building-label treehouse-label" onclick="enterBuilding('treehouse')">Treehouse</div>
-    <div class="building-label market-label" onclick="enterBuilding('market')">Market</div>
-    <div class="building-label arena-label" onclick="enterBuilding('arena')">Arena</div>
-    <div class="building-label gate-label" onclick="enterBuilding('map')">World Map</div>
   </div>
 
   <div id="building-screen"></div>
