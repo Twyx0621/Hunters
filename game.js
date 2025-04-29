@@ -1,7 +1,7 @@
 function enterBuilding(building) {
   const screen = document.getElementById("building-screen");
-  
-  switch(building) {
+
+  switch (building) {
     case 'main':
       screen.innerHTML = `<h2>Main Building</h2><p>Welcome to your hero house.</p>`;
       break;
